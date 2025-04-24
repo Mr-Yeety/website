@@ -4,7 +4,6 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { useState } from "react"
 
 
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiamVldC1qb3NoaTEiLCJhIjoiY205cHJkNjU2MHJ6YzJyb2czd2QycXhpNiJ9.4PHxPcg1D2k43pV2k0jxwA' // Set your mapbox token here
 
 export const LocationBlock = () => {
 
@@ -27,7 +26,7 @@ export const LocationBlock = () => {
                     onMove={evt=> setViewState(evt.viewState)}
                     style={{width: '100%', height: '100%'}}
                     mapStyle="mapbox://styles/mapbox/streets-v11"
-                    mapboxAccessToken={MAPBOX_TOKEN}
+                    mapboxAccessToken={import.meta.env.VITE_MAPBOX_TOKEN}
                 >
 
                 <Marker longitude={-114.1618} latitude={ 51.0867} anchor="center">
