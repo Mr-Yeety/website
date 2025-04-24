@@ -4,7 +4,6 @@ import { AboutBlock } from "../blocks/AboutBlock";
 import { LocationBlock } from "../blocks/LocationBlock";
 import { motion } from "framer-motion";
 import { ProjectBlock } from "../blocks/ProjectBlock";
-import NavBar from "../NavBar";
 
 export const Home = () => {
 

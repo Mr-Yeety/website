@@ -1,5 +1,5 @@
 
-import { SiGithub, SiInstagram, SiGmail } from "react-icons/si"
+import { SiGithub, SiGmail } from "react-icons/si"
 import { Block } from "../Block"
 
 export const SocialsBlock = () => {
@@ -35,19 +35,3 @@ export const SocialsBlock = () => {
 
 
 
-
-
-const GradientIcon = () => (
-    <svg width="30" height="30" viewBox="0 0 24 24">
-      <defs>
-        <linearGradient id="ig-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#feda75" />
-          <stop offset="25%" stopColor="#fa7e1e" />
-          <stop offset="50%" stopColor="#d62976" />
-          <stop offset="75%" stopColor="#962fbf" />
-          <stop offset="100%" stopColor="#4f5bd5" />
-        </linearGradient>
-      </defs>
-      <SiInstagram fill="url(#ig-gradient)" width="30%" height="100%" />
-    </svg>
-  );
