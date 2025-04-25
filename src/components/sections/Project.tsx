@@ -87,7 +87,7 @@ export const Project = () => {
                     </div>
                     </Block>
 
-                    <Block className="col-span-12 flex justify-center items-center gap-8">
+                    <Block className="col-span-12  flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
                         {project.techstack.map((tech) => (
                         <motion.div
                         key={project.id}
@@ -95,7 +95,7 @@ export const Project = () => {
                         scale: 1.05,
                         }}
                         transition={{ type: 'spring', stiffness: 300 }}
-                        className="px-6 py-2 rounded-full border border-content-light/30 bg-transparent text-content text-lg font-poppins font-medium backdrop-blur-md cursor-default"
+                        className="px-6 py-2 rounded-full border border-content-light/30 bg-transparent text-content  text-sm md:text-lg font-poppins font-medium backdrop-blur-md cursor-default"
                         >
                         {tech}
                         </motion.div>
