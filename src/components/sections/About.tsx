@@ -14,6 +14,7 @@ export const About = () => {
                     <button className="border-2 border-content-light/30 rounded-full p-2  hover:border-4 transition duration-350">
                         <FiX className="text-content size-5"/>
                     </button>
+                    
 
              </Link>
         </div>
