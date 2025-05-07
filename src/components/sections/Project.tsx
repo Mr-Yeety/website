@@ -14,6 +14,7 @@ type Project = {
     techstack: string[],
     github: string,
     images: string[],
+    link: string
 }
 
 
@@ -70,7 +71,7 @@ export const Project = () => {
                         
                         
                             <motion.a
-                                            href="https://www.google.com/"
+                                            href={project.link}
                                             target="_blank"
                                             initial={{width:48}}
                                             whileHover={{width: 160}}
